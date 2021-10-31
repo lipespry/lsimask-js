@@ -28,6 +28,8 @@
  * @returns LSIMaskObj
  *
  * @see https://github.com/lipespry/lsimask-js
+ *
+ * @license https://github.com/lipespry/lsimask-js/blob/main/LICENSE
  */
  const LSIMask = (() => {
     const LSIMaskObj = function (elem) {
