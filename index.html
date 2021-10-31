@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LSIMask - Demonstração</title>
+    <script src="lsimask.js"></script>
+</head>
+<body>
+
+    <h1>LSIMask</h1>
+    <h2>Por Felipe M.</h2>
+    <h3>Instagram: <a href="https://instagram.com/lipespry" target="_blank">@lipespry</a></h3>
+    <h3>GitHub: <a href="https://github.com/lipespry" target="_blank">@lipespry</a></h3>
+    <h3>Repositório: <a href="https://github.com/lipespry/lsimask-js" target="_blank">lsimask-js</a></h3>
+
+    <h2>Máscaras:</h2>
+
+    <label>CPF:</label>
+    <input type="text" id="inputCPF">
+    <br>
+    <label>CNPJ:</label>
+    <input type="text" id="inputCNPJ">
+    <br>
+    <label>CPF e CNPJ:</label>
+    <input type="text" id="inputCPFCNPJ">
+    <br>
+    <label>CEP:</label>
+    <input type="text" id="inputCEP">
+    <br>
+    <label>Telefone:</label>
+    <input type="text" id="inputTEL">
+
+    <p><b>Contribua com novas máscaras!</b></p>
+    <p><b>Faça um pull request no repositório do projeto.</b></p>
+
+    <script>
+        LSIMask('#inputCPF').cpf().addEvent('input');
+        LSIMask('#inputCNPJ').cnpj().addEvent('input');
+        LSIMask('#inputCPFCNPJ').cpfcnpj().addEvent('input');
+        LSIMask('#inputCEP').cep().addEvent('input');
+        LSIMask('#inputTEL').tel().addEvent('input');
+    </script>
+</body>
+</html>
